@@ -1,0 +1,6 @@
+<div>
+    <h4>Carrito actual</h4>
+    <div *ngIf="carrito.items.length > 0; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>Carrito lleno!</ng-template>
+    <ng-template #elseBlock>Carrito vacio</ng-template>
+</div>
